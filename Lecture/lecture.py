@@ -1,14 +1,14 @@
-class Car(autom):
-    make = "Hyundai"
-    model = "Elantra"
-    Doors = 4
-    seats = 7
+# class Car(autom):
+#     make = "Hyundai"
+#     model = "Elantra"
+#     Doors = 4
+#     seats = 7
 
-honda = Car()
-toyota = Car()
-BMW = Car()
-hyundai = Car()
-Lamborghini = Car()
+# honda = Car()
+# toyota = Car()
+# BMW = Car()
+# hyundai = Car()
+# Lamborghini = Car()
 
 
 
@@ -18,66 +18,66 @@ Lamborghini = Car()
 
 
 
-class Car(autom):
-    def __init__(self, make, model,door,seats):
-        self.make = make
-        self.model = model
-        self.door = door
-        self.seats = seats
-    def get_make(self):
-        return self.make
-    
-    def set_make(self, make):
-        self.make = make
-
-    def get_model(self):
-        return self.model
-    
-    def set_model(self, model):
-        self.model = model
-    
-    def get_doors(self):
-        return self.doors
-    
-    def set_doors(self, doors):
-        doors.self = doors
-
-    def get_seats(self):
-        return self.seats
-    
-    def set_seats(self, seats):
-        seats.self = seats
-        return Cars
-        
-    
-
-print(f"This is a", {make},{model},". It has ",{door},"doors, and ",{seat}," seats.")
-
-
-    
-
-    
-    
-
-
-
-
-
-
-
-# class Car:
-#     wheels = 5
-    
-#     def__init__(self, make, model, year, color):
+# class Vehicle:
+#     def __init__(self, make, model,year, color, wheels, door,seats):
 #         self.make = make
 #         self.model = model
-#         self.year = year
+#         self.model = year
+#         self.model = color
+#         self.model = wheels
+#         self.door = door
+#         self.seats = seats
+    
+#     def __repr__(self):
+#         return f"<Car:{self.make}{self.model}{self.year}{self.color}>"
+
+#     def update_color(self, color):
 #         self.color = color
+#         print(self)
+
+# vehicle = Vehicle('honda', 'civic', '2020', 'silver')
+
+# vehicle.update_color('hot pink')
+
+
+
+# class Vehicle:
+#     def __init__(self, make, model,year, color, door,seats):
 #         self.make = make
-        
-# car5 = Car('honda','fit',2008,'white')
-# car6 = Car('chevy','impala',2008,'white')
+#         self.model = model
+#         self.model = year
+#         self.model = color
+#         self.door = door
+#         self.seats = seats
+    
+#     def __repr__(self):
+#         return f"<Car:{self.make}{self.model}{self.year}{self.color}>"
 
-# print(car5.make)
-# print(car6.make)
+#     def update_color(self, color):
+#         self.color = color
+#         print(self)
 
+# vehicle = Vehicle('honda', 'civic', '2020', 'silver')
+
+# vehicle.update_color('hot pink')
+#
+#
+# Create class with 2 parameters inside of the __init__which are make and model
+
+# Inside of the Car class create a method that has 4 parameter in total (self, year, door, seats)
+
+# output: This car is from 2019 and is a ford explorer and has 4 doors and 5 seats
+
+
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def car_more(self, year, door, seats):
+        print(f"This car is from {year} and is a {self.make} {self.model} and has a total of {door} doors and {seats} seats.")
+
+my_car = Car("ford", "Explorer")  
+
+answer = my_car.car_more(2019, 4, 5)
+# print("car_info")
