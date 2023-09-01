@@ -8,7 +8,7 @@ class MatrixCharacter:
     do while
     """
     
-    def __init__(self, name):
+    def __init__(self, name, fighting_styles):
         self.name = name
         self.fighting_styles = fighting_styles
         self.awake = False
@@ -21,7 +21,7 @@ class MatrixCharacter:
                 self.receive_training()
             while True:
                 user_training = input("Do you need additonal training? [y]/[n]")
-                if user_training = "y":
+                if user_training == "y":
                     self.addtional_training
             self.additonal.training()    
             self.update_location()
